@@ -1,9 +1,9 @@
 pipeline {
   agent {
     node { label 'nodejs' }
-    parameters {
-      booleanParam(name: "RUN_FRONTEND_TESTS", defaultValue: true)
-    }
+  }
+  parameters {
+    booleanParam(name: "RUN_FRONTEND_TESTS", defaultValue: true)
   }
   stages {
     stage ('Checkout') {
